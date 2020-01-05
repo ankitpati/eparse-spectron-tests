@@ -1,0 +1,33 @@
+{
+  "name": "E-Parse_Spectron_Tests",
+  "version": "1.0.0",
+  "description": "Test E-Parse with Spectron.",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/ankitpati/eparse-spectron-tests.git"
+  },
+  "keywords": [
+    "electron",
+    "spectron",
+    "eparse",
+    "gparse",
+    "PSL",
+    "public",
+    "suffix",
+    "list"
+  ],
+  "author": "Ankit Pati",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://gitlab.com/ankitpati/eparse-spectron-tests/issues"
+  },
+  "homepage": "https://gitlab.com/ankitpati/eparse-spectron-tests#readme",
+  "devDependencies": {
+    "electron": "^7.1.7",
+    "spectron": "^9.0.0"
+  }
+}
