@@ -11,6 +11,9 @@ let longUrl = 'https://reverse.geocoder.ls.hereapi.com/6.2/' +
 let expectedHostname = 'reverse.geocoder.ls.hereapi.com';
 
 app.start().then(
+    ()           => { return app.client.getTitle();                }).then(
+    (page_title) => { strictEqual(page_title, 'G-Parse');          }).catch(
+    (error)      => { console.error('Test failed', error.message); }).then(
     ()           => { return app.client.getText('.brand-logo');    }).then(
     (brand_logo) => { strictEqual(brand_logo, 'G-Parse');          }).catch(
     (error)      => { console.error('Test failed', error.message); }).then(
