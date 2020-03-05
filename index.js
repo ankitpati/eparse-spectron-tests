@@ -15,7 +15,7 @@ app.start().then(
     (brand_logo) => { strictEqual(brand_logo, 'G-Parse');          }).catch(
     (error)      => { console.error('Test failed', error.message); }).then(
     async ()     => { await app.client.setValue('//*[@id="url"]', longUrl); }).then(
-    ()           => { app.client.click('#submit');                 }).then(
+    ()           => { app.client.click('//*[@id="submit"]');       }).then(
     async ()     => { await app.client.waitUntilTextExists('//*[@id="hostname"]', expectedHostname); }).then(
     ()           => { return app.client.getText('//*[@id="hostname"]'); }).then(
     (hostname)   => { strictEqual(hostname, expectedHostname);     }).catch(
