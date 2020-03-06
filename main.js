@@ -1,7 +1,7 @@
 const { Application } = require('spectron');
 const { strictEqual } = require('assert');
 
-const app = new Application({ path: '/opt/E-Parse/eparse' });
+const app = new Application({ path: '/opt/E-Parse/e-parse' });
 
 let longUrl = 'https://reverse.geocoder.ls.hereapi.com/6.2/' +
               'reversegeocode.json?prox=41.8839%2C-87.6389%2C150&' +
