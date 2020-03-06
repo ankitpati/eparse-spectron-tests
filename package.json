@@ -2,7 +2,7 @@
   "name": "E-Parse_Spectron_Tests",
   "version": "1.0.0",
   "description": "Test E-Parse with Spectron.",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
@@ -27,8 +27,8 @@
   },
   "homepage": "https://gitlab.com/ankitpati/eparse-spectron-tests#readme",
   "devDependencies": {
-    "electron": "^7.1.14",
-    "eslint": "^6.8.0",
-    "spectron": "^9.0.0"
+    "electron": "^8.1.0",
+    "eslint": "6.8.0",
+    "spectron": "10.0.1"
   }
 }
